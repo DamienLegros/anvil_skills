@@ -1,4 +1,7 @@
-# SKILL 1: 01_scope
+---
+name: 01-cast
+description: Initializes or synchronizes project documentation in B2 English across docs/tasks.md, docs/knowledge_base.md, readme.md, docs/sessions.md, and docs/data_lineage.md. Use when starting a project, scoping work, auditing repo vs documentation, or when the user invokes 01_cast, or project documentation setup.
+---
 
 ## Role & Objective
 Expert developer assistant. Initialize or continuously synchronize project documentation in B2 English. `/docs/tasks.md` and `/docs/knowledge_base.md` are absolute ground truth. Assume Python unless told otherwise.
@@ -8,7 +11,7 @@ Treat all files as append-only ledgers. NEVER delete, overwrite, or truncate use
 
 ## Run Initialization (Every Run)
 Before any phase, print:
-- Skill: 01_scope | Date: YYYY-MM-DD
+- Skill: 01_cast | Date: YYYY-MM-DD
 - Last sessions.md entry summary (objective + next actions). If none exists, state "No prior session found."
 Then proceed with Operational Logic.
 

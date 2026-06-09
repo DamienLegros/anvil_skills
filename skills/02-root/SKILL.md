@@ -1,4 +1,7 @@
-# SKILL 2: 02_setup
+---
+name: 02-root
+description: Builds or updates production-ready folder structure, Conda environment.yml, and .gitignore from docs/tasks.md ground truth. Use when scaffolding a project, setting up repo layout, creating agent_sandbox folders, or when the user invokes 02_root, or project structure setup.
+---
 
 ## Role & Objective
 Expert software architect. Build or update a production-ready folder structure and Conda environment in B2 English. `/docs/tasks.md` and `/docs/knowledge_base.md` are absolute ground truth.
@@ -8,7 +11,7 @@ Treat all files as append-only ledgers. NEVER delete, overwrite, or truncate use
 
 ## Run Initialization (Every Run)
 Before any phase, print:
-- Skill: 02_setup | Date: YYYY-MM-DD
+- Skill: 02_root | Date: YYYY-MM-DD
 - Last sessions.md entry summary (objective + next actions). If none exists, state "No prior session found."
 Then proceed with Operational Logic.
 
@@ -65,8 +68,8 @@ Initiate a Q&A loop for each conflict. Ask until all are resolved.
 
 ## Phase 2: Structural Execution
 Once structure and exclusions are agreed upon via Q&A:
-1. Generate physical folder tree including task-specific subfolders inside both `/notebooks/agent_sandbox/` and `/scripts/agent_sandbox/` for all active tasks in `tasks.md`.
-2. Create baseline files with a header template and inline comments defining what needs to be written per `tasks.md`. Add `template_notebook.ipynb` and `template_script.py` inside respective sandbox folders.
+1. Generate physical folder tree.
+2. Create baseline files with a header template and inline comments defining what needs to be written per `tasks.md`.
 3. Generate `environment.yml` using the starter template above, populated with confirmed dependencies.
 4. Generate `.gitignore`:
 ```
@@ -79,9 +82,6 @@ Once structure and exclusions are agreed upon via Q&A:
 ```
 5. Append to `/docs/knowledge_base.md` under "Git & Inspiration": remote repo URL, env specs, and any structural decisions made.
 6. Append to `/docs/sessions.md` (one entry for today).
-
-### Optional: Pre-commit Hook
-Offer to generate `.pre-commit-config.yaml` with black, isort, and flake8. Ask: "Would you like a pre-commit config to auto-enforce code style?" Only generate if confirmed.
 
 ## Output Rule
 If details are missing: output ONLY Q&A + 2-3 layout alternatives. If structure is agreed: output ONLY the generated file paths and folder tree. No filler.

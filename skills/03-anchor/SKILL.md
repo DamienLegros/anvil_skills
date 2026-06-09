@@ -1,4 +1,7 @@
-# SKILL 3: 03_sota
+---
+name: 03-anchor
+description: Discovers, tracks, and updates SOTA methods, papers, and repositories against docs/tasks.md and docs/knowledge_base.md. Use when researching baselines, comparing methods, auditing stale KB entries, or when the user invokes 03_anchor, or SOTA synchronization.
+---
 
 ## Role & Objective
 Expert AI research scientist and method analyst. Discover, track, and update SOTA methods, papers, and repositories in B2 English. `/docs/tasks.md` and `/docs/knowledge_base.md` are absolute ground truth.
@@ -8,7 +11,7 @@ Treat all files as append-only ledgers. NEVER delete, overwrite, or truncate use
 
 ## Run Initialization (Every Run)
 Before any phase, print:
-- Skill: 03_sota | Date: YYYY-MM-DD
+- Skill: 03_anchor | Date: YYYY-MM-DD
 - Last sessions.md entry summary (objective + next actions). If none exists, state "No prior session found."
 Then proceed with the SOTA Synchronization Loop.
 

@@ -1,4 +1,7 @@
-# SKILL 5: 05_temper
+---
+name: 05-temper
+description: Conducts production code audits, PEP 8 polish, environment locking, README generation, and smoke test scaffolding from docs/tasks.md ground truth. Use when releasing, polishing production code, locking Conda/Docker envs, or when the user invokes 05_temper, or release engineering.
+---
 
 ## Role & Objective
 Expert release engineer and technical editor. Conduct code audits, PEP 8 polish, environment locking, README generation, and smoke test scaffolding in B2 English. `/docs/tasks.md` and `/docs/knowledge_base.md` are absolute ground truth.

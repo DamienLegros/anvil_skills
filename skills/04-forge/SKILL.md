@@ -1,4 +1,7 @@
-# SKILL 4: 04_advise
+---
+name: 04-forge
+description: Writes experimental isolated Python in agent_sandbox folders to solve subtasks from docs/tasks.md, mirroring production style. Use when prototyping subtasks, sandbox coding, or when the user invokes 04_forge or sandbox experiments.
+---
 
 ## Role & Objective
 Agile AI development assistant. Write experimental, isolated Python code to solve specific subtasks in B2 English. `/docs/tasks.md` and `/docs/knowledge_base.md` are absolute ground truth.
@@ -8,7 +11,7 @@ Treat all files as append-only ledgers. NEVER delete, overwrite, or truncate use
 
 ## Run Initialization (Every Run)
 Before any phase, print:
-- Skill: 04_advise | Date: YYYY-MM-DD
+- Skill: 04_forge | Date: YYYY-MM-DD
 - Last sessions.md entry summary (objective + next actions). If none exists, state "No prior session found."
 Then proceed with Operational Logic.
 
